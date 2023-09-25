@@ -23,7 +23,7 @@ public class MoveLeftLeg : MonoBehaviour
     void Update()
     {
         //if i press the A key
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKey(KeyCode.O))
         {
             //and push up my arm
             myBody.AddForce(leftLegMove * leftLegPower, ForceMode2D.Impulse);

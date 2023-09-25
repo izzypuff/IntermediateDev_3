@@ -23,7 +23,7 @@ public class MoveRightArm : MonoBehaviour
     void Update()
     {
         //if i press the A key
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             //and push up my arm
             myBody.AddForce(rightArmMove * rightArmPower, ForceMode2D.Impulse);
