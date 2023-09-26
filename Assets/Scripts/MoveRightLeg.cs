@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class MoveRightLeg : MonoBehaviour
 {
-    //ref for my rigidbody that is on my arm
+    //ref for my rigidbody
     Rigidbody2D myBody;
 
+    //creates leg power
     public float rightLegPower;
 
+    //creates vector for right leg
     Vector3 rightLegMove = new Vector3(-1, 0, 0);
 
     // Start is called before the first frame update
@@ -22,10 +24,10 @@ public class MoveRightLeg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if i press the A key
+        //if i press the P key
         if (Input.GetKey(KeyCode.P))
         {
-            //and push up my arm
+            //and push up my leg
             myBody.AddForce(rightLegMove * rightLegPower, ForceMode2D.Impulse);
         }
     }
