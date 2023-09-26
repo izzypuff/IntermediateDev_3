@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    //allows access to scene called SampleScene
     private string SampleScene = "SampleScene";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,10 @@ public class Restart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if space is pressed
         if(Input.GetKey(KeyCode.Space))
         {
+            //change to main scene
             SceneManager.LoadScene(SampleScene);
         }
     }
